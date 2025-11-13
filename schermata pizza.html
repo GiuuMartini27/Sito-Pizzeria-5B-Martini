@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Pizze - Pizzeria Di Mondo</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fff8f0, #ffd6a5, #ffc371);
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            animation: fadeIn 1s ease-in;
+        }
+
+        header {
+            background: linear-gradient(90deg, #b71c1c, #e53935, #ff7043);
+            color: #fff;
+            text-align: center;
+            padding: 2.5em 1em;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 0.3em;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2em;
+            max-width: 1100px;
+            margin: 3em auto;
+            padding: 0 1em;
+            animation: slideUp 1.2s ease;
+        }
+
+        .pizza {
+            background: linear-gradient(145deg, #ffffff, #fff2e0);
+            border-radius: 15px;
+            padding: 1.8em;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .pizza:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            background: linear-gradient(145deg, #fffaf3, #ffe9cc);
+        }
+
+        .pizza img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1em;
+            transition: transform 0.4s ease;
+        }
+
+        .pizza img:hover {
+            transform: scale(1.03);
+        }
+
+        .pizza h2 {
+            color: #e53935;
+            font-size: 1.7em;
+            margin-bottom: 0.4em;
+        }
+
+        .ingredienti {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 0.8em;
+        }
+
+        .descrizione {
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 0.8em;
+        }
+
+        .origine {
+            font-weight: bold;
+            color: #8b0000;
+            margin-bottom: 0.8em;
+        }
+
+        .prezzo {
+            font-size: 1.2em;
+            color: #2e7d32;
+            font-weight: bold;
+            position: absolute;
+            top: 1.2em;
+            right: 1.5em;
+            background: #e8f5e9;
+            padding: 0.3em 0.7em;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.8em;
+            background: linear-gradient(90deg, #e53935, #b71c1c);
+            color: white;
+            margin-top: 3em;
+            font-size: 1em;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes slideUp {
+            from {transform: translateY(20px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍕 PizzaPazza</h1>
+    <p>Scopri le nostre pizze artigianali, fatte con ingredienti freschi e passione autentica italiana!</p>
+</header>
+
+<section class="menu">
+
+    <article class="pizza">
+        <img src="Pizza margherita.webp">
+        <span class="prezzo">€7.00</span>
+        <h2>Margherita</h2>
+        <p class="ingredienti">Pomodoro, mozzarella fior di latte, basilico fresco, olio extravergine d'oliva</p>
+        <p class="descrizione">La regina delle pizze, semplice ma perfetta. Il suo equilibrio tra pomodoro e mozzarella conquista da sempre tutti.</p>
+        <p class="origine">Origine: Napoli 🇮🇹</p>
+    </article>
+
+    <article class="pizza">
+        <img src="pizza marinara.jpg">
+        <span class="prezzo">€6.50</span>
+        <h2>Marinara</h2>
+        <p class="ingredienti">Pomodoro, aglio, origano, olio extravergine d'oliva</p>
+        <p class="descrizione">Leggera e aromatica, senza formaggio, ideale per chi ama il gusto autentico del pomodoro e delle erbe mediterranee.</p>
+        <p class="origine">Origine: Campania 🇮🇹</p>
+    </article>
+
+    <article class="pizza">
+        <img src="capricciosa.jpg">
+        <span class="prezzo">€9.00</span>
+        <h2>Capricciosa</h2>
+        <p class="ingredienti">Pomodoro, mozzarella, prosciutto cotto, funghi, carciofi, olive nere</p>
+        <p class="descrizione">Un’esplosione di sapori e consistenze: ogni morso è una sorpresa. Perfetta per chi ama la varietà e l’abbondanza.</p>
+        <p class="origine">Origine: Roma 🇮🇹</p>
+    </article>
+
+    <article class="pizza">
+        <img src="diavola.jpg">
+        <span class="prezzo">€8.50</span>
+        <h2>Diavola</h2>
+        <p class="ingredienti">Pomodoro, mozzarella, salame piccante, peperoncino</p>
+        <p class="descrizione">Piccante e irresistibile! Il salame e il peperoncino creano un mix infuocato per veri amanti dei sapori forti.</p>
+        <p class="origine">Origine: Calabria 🇮🇹</p>
+    </article>
+
+    <article class="pizza">
+        <img src="primavera pizza.jpg">
+        <span class="prezzo">€9.50</span>
+        <h2>Primavera</h2>
+        <p class="ingredienti">Pomodoro, mozzarella, pomodorini freschi, rucola, scaglie di grana, olio extravergine d'oliva</p>
+        <p class="descrizione">
+            Una pizza colorata e leggera che celebra i sapori della bella stagione. 
+            La croccantezza della rucola e la dolcezza dei pomodorini si fondono con la cremosità della mozzarella e il profumo del grana.
+        </p>
+        <p class="origine">Origine: Italia settentrionale 🇮🇹</p>
+    </article>
+
+    <article class="pizza">
+        <img src="pistacchiosa.jpg">
+        <span class="prezzo">€11.00</span>
+        <h2>Pistacchiosa</h2>
+        <p class="ingredienti">Base bianca con crema di pistacchio, mozzarella, mortadella IGP, granella di pistacchio</p>
+        <p class="descrizione">
+            Una pizza raffinata e irresistibile dal gusto unico. La morbidezza della mortadella si sposa perfettamente con la dolce cremosità del pistacchio, 
+            creando un equilibrio tra sapori delicati e intensi che conquista al primo morso.
+        </p>
+        <p class="origine">Origine: Sicilia 🇮🇹</p>
+    </article>
+
+    <article class="pizza">
+        <img src="wurstel e patatine.jpg">
+        <span class="prezzo">€8.00</span>
+        <h2>Wurstel e Patatine</h2>
+        <p class="ingredienti">Pomodoro, mozzarella, wurstel di suino, patatine fritte dorate</p>
+        <p class="descrizione">
+            Una pizza amata da grandi e piccini! La croccantezza delle patatine si unisce al sapore deciso dei wurstel, 
+            creando un mix goloso e divertente perfetto per una serata informale tra amici o in famiglia.
+        </p>
+        <p class="origine">Origine: Italia settentrionale 🇮🇹</p>
+    </article>
+
+    <article class="pizza">
+        <img src="crocchè.jpg">
+        <span class="prezzo">€9.00</span>
+        <h2>Crocchè</h2>
+        <p class="ingredienti">Pomodoro, mozzarella, crocchè di patate artigianali, pepe nero, olio extravergine d'oliva</p>
+        <p class="descrizione">
+            Una pizza che unisce due simboli della cucina napoletana: la pizza e i crocchè di patate. 
+            Il gusto morbido e avvolgente del crocchè si sposa con la mozzarella filante e il profumo del pomodoro, 
+            regalando un’esperienza genuina e irresistibile, tipicamente “di strada”.
+        </p>
+        <p class="origine">Origine: Napoli 🇮🇹</p>
+    </article>
+
+    <article class="pizza">
+        <img src="4 formaggi.jpg">
+        <span class="prezzo">€9.50</span>
+        <h2>4 Formaggi</h2>
+        <p class="ingredienti">Mozzarella, gorgonzola, fontina, parmigiano grattugiato (base bianca o con pomodoro)</p>
+        <p class="descrizione">
+            Un trionfo di sapori e profumi per gli amanti del formaggio. 
+            La fusione cremosa di quattro formaggi italiani crea un gusto intenso e avvolgente, 
+            bilanciato tra dolcezza e sapidità, perfetto per un’esperienza ricca e confortante.
+        </p>
+        <p class="origine">Origine: Italia settentrionale 🇮🇹</p>
+    </article>
+
+</section>
+
+<footer>
+    <div class="button-container">
+                    <button class="menu-button" onclick="window.location.href='scheramata home.html'"> Home</button>
+    <p>© 2025 PizzaPazza - Tutti i diritti riservati 🍕</p>
+</footer>
+
+</body>
+</html>
+

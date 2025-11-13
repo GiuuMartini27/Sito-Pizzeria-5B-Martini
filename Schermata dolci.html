@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Dolci - PizzaPazza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #fffaf5, #ffe0c3, #ffd6a5);
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            animation: fadeIn 1s ease-in;
+        }
+
+        header {
+            background: linear-gradient(90deg, #6a1b9a, #8e24aa, #ba68c8);
+            color: #fff;
+            text-align: center;
+            padding: 2.5em 1em;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 0.3em;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2em;
+            max-width: 1100px;
+            margin: 3em auto;
+            padding: 0 1em;
+            animation: slideUp 1.2s ease;
+        }
+
+        .dolce {
+            background: linear-gradient(145deg, #ffffff, #fff0e6);
+            border-radius: 15px;
+            padding: 1.8em;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .dolce:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            background: linear-gradient(145deg, #fffaf3, #ffe9cc);
+        }
+
+        .dolce img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1em;
+            transition: transform 0.4s ease;
+        }
+
+        .dolce img:hover {
+            transform: scale(1.03);
+        }
+
+        .dolce h2 {
+            color: #8e24aa;
+            font-size: 1.7em;
+            margin-bottom: 0.4em;
+        }
+
+        .ingredienti {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 0.8em;
+        }
+
+        .descrizione {
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 0.8em;
+        }
+
+        .origine {
+            font-weight: bold;
+            color: #6a1b9a;
+            margin-bottom: 0.8em;
+        }
+
+        .prezzo {
+            font-size: 1.2em;
+            color: #2e7d32;
+            font-weight: bold;
+            position: absolute;
+            top: 1.2em;
+            right: 1.5em;
+            background: #e8f5e9;
+            padding: 0.3em 0.7em;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.8em;
+            background: linear-gradient(90deg, #8e24aa, #6a1b9a);
+            color: white;
+            margin-top: 3em;
+            font-size: 1em;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes slideUp {
+            from {transform: translateY(20px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍰 PizzaPazza</h1>
+    <p>Delizie artigianali italiane, preparate con amore e ingredienti genuini per addolcire ogni momento!</p>
+</header>
+
+<section class="menu">
+
+    <article class="dolce">
+        <img src="tiramisu.jpg">
+        <span class="prezzo">€5.50</span>
+        <h2>Tiramisù</h2>
+        <p class="ingredienti">Savoiardi, caffè espresso, mascarpone, uova, cacao amaro</p>
+        <p class="descrizione">Il dolce italiano più amato al mondo: cremoso, avvolgente e con il giusto equilibrio tra dolcezza e aroma di caffè.</p>
+        <p class="origine">Origine: Veneto 🇮🇹</p>
+    </article>
+
+    <article class="dolce">
+        <img src="Cannoli_siciliani.jpg">
+        <span class="prezzo">€4.50</span>
+        <h2>Cannoli Siciliani</h2>
+        <p class="ingredienti">Cialda croccante, ricotta di pecora dolce, scorza d’arancia candita, pistacchi</p>
+        <p class="descrizione">Un trionfo di croccantezza e cremosità che racchiude tutta la dolcezza della Sicilia.</p>
+        <p class="origine">Origine: Sicilia 🇮🇹</p>
+    </article>
+
+    <article class="dolce">
+        <img src="pastiera napoletana.jpg">
+        <span class="prezzo">€6.00</span>
+        <h2>Pastiera Napoletana</h2>
+        <p class="ingredienti">Pasta frolla, grano cotto, ricotta, canditi, fiori d’arancio</p>
+        <p class="descrizione">Un dolce simbolo della Pasqua napoletana, profumato e dal gusto unico grazie al mix di agrumi e grano.</p>
+        <p class="origine">Origine: Napoli 🇮🇹</p>
+    </article>
+
+    <article class="dolce">
+        <img src="panna cotta.jpg">
+        <span class="prezzo">€4.00</span>
+        <h2>Panna Cotta</h2>
+        <p class="ingredienti">Panna fresca, zucchero, vaniglia, coulis di frutti rossi</p>
+        <p class="descrizione">Morbida e vellutata, un classico intramontabile dal gusto delicato che conquista con la sua semplicità.</p>
+        <p class="origine">Origine: Piemonte 🇮🇹</p>
+    </article>
+
+    <article class="dolce">
+        <img src="babà.jpg">
+        <span class="prezzo">€5.00</span>
+        <h2>Babà al Rum</h2>
+        <p class="ingredienti">Impasto lievitato, sciroppo al rum, panna montata</p>
+        <p class="descrizione">Soffice e profumato, il babà è una vera icona della pasticceria napoletana, dolce e deciso allo stesso tempo.</p>
+        <p class="origine">Origine: Napoli 🇮🇹</p>
+    </article>
+
+    <article class="dolce">
+        <img src="cassata siciliana.jpg">
+        <span class="prezzo">€6.50</span>
+        <h2>Cassata Siciliana</h2>
+        <p class="ingredienti">Pan di Spagna, ricotta, canditi, pasta di mandorle, glassa</p>
+        <p class="descrizione">Colorata e scenografica, la cassata è una festa per gli occhi e per il palato, emblema della tradizione dolciaria siciliana.</p>
+        <p class="origine">Origine: Sicilia 🇮🇹</p>
+    </article>
+
+    <article class="dolce">
+        <img src="profiterol al cioccolato.jpg">
+        <span class="prezzo">€5.50</span>
+        <h2>Profiteroles al Cioccolato</h2>
+        <p class="ingredienti">Bignè, crema chantilly, glassa al cioccolato fondente</p>
+        <p class="descrizione">Un’esplosione di gusto e morbidezza: i bignè ripieni e ricoperti di cioccolato sono una vera coccola per i golosi.</p>
+        <p class="origine">Origine: Francia 🇫🇷 / Italia 🇮🇹</p>
+    </article>
+
+    <article class="dolce">
+        <img src="torta al limone.jpg">
+        <span class="prezzo">€4.80</span>
+        <h2>Torta al Limone</h2>
+        <p class="ingredienti">Pan di Spagna, crema al limone, scorza di limone grattugiata</p>
+        <p class="descrizione">Fresca e profumata, perfetta per chi ama i dolci agrumati dal gusto leggero e raffinato.</p>
+        <p class="origine">Origine: Costiera Amalfitana 🇮🇹</p>
+      
+                   
+                    
+    </article>
+
+</section>
+
+<footer>
+      <div class="button-container">
+                    <button class="menu-button" onclick="window.location.href='scheramata home.html'"> Home</button>
+    <p>© 2025 Pasticceria Di Mondo - Tutti i diritti riservati 🍰</p>
+</footer>
+
+</body>
+</html>
