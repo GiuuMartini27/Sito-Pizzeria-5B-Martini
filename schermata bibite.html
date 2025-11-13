@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bevande - PizzaPazza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5fff9, #c3ffe0, #a5ffd6);
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            animation: fadeIn 1s ease-in;
+        }
+
+        header {
+            background: linear-gradient(90deg, #00796b, #009688, #4db6ac);
+            color: #fff;
+            text-align: center;
+            padding: 2.5em 1em;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 0.3em;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2em;
+            max-width: 1100px;
+            margin: 3em auto;
+            padding: 0 1em;
+            animation: slideUp 1.2s ease;
+        }
+
+        .bevanda {
+            background: linear-gradient(145deg, #ffffff, #e6fff5);
+            border-radius: 15px;
+            padding: 1.8em;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .bevanda:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            background: linear-gradient(145deg, #fafffd, #ccffee);
+        }
+
+        .bevanda img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin-bottom: 1em;
+            transition: transform 0.4s ease;
+        }
+
+        .bevanda img:hover {
+            transform: scale(1.03);
+        }
+
+        .bevanda h2 {
+            color: #00796b;
+            font-size: 1.7em;
+            margin-bottom: 0.4em;
+        }
+
+        .ingredienti {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 0.8em;
+        }
+
+        .descrizione {
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 0.8em;
+        }
+
+        .origine {
+            font-weight: bold;
+            color: #004d40;
+            margin-bottom: 0.8em;
+        }
+
+        .prezzo {
+            font-size: 1.2em;
+            color: #1b5e20;
+            font-weight: bold;
+            position: absolute;
+            top: 1.2em;
+            right: 1.5em;
+            background: #e8f5e9;
+            padding: 0.3em 0.7em;
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.8em;
+            background: linear-gradient(90deg, #009688, #00796b);
+            color: white;
+            margin-top: 3em;
+            font-size: 1em;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes slideUp {
+            from {transform: translateY(20px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🍹 PizzaPazza</h1>
+    <p>Bevande rinfrescanti e amari autentici per accompagnare ogni momento di piacere e relax!</p>
+</header>
+
+<section class="menu">
+
+    <article class="bevanda">
+        <img src="coca cola.jpg">
+        <span class="prezzo">€3.00</span>
+        <h2>Coca-Cola</h2>
+        <p class="ingredienti">Acqua gassata, zucchero, aromi naturali, caffeina</p>
+        <p class="descrizione">L’intramontabile bibita frizzante dal gusto unico e inconfondibile, perfetta in ogni occasione.</p>
+        <p class="origine">Origine: Stati Uniti 🇺🇸</p>
+    </article>
+
+    <article class="bevanda">
+        <img src="fanta.jpg">
+        <span class="prezzo">€3.00</span>
+        <h2>Fanta Aranciata</h2>
+        <p class="ingredienti">Succo d’arancia, acqua frizzante, zucchero</p>
+        <p class="descrizione">Frizzante, dolce e agrumata: una bevanda iconica che sprigiona tutta l’energia dell’estate.</p>
+        <p class="origine">Origine: Germania 🇩🇪</p>
+    </article>
+
+    <article class="bevanda">
+        <img src="sprite.jpeg">
+        <span class="prezzo">€3.00</span>
+        <h2>Sprite</h2>
+        <p class="ingredienti">Acqua frizzante, zucchero, limone, lime</p>
+        <p class="descrizione">Rinfrescante e frizzante, dal gusto agrumato che disseta con leggerezza e vitalità.</p>
+        <p class="origine">Origine: Stati Uniti 🇺🇸</p>
+    </article>
+
+    <article class="bevanda">
+        <img src="acqua frizzante.jpg">
+        <span class="prezzo">€2.00</span>
+        <h2>Acqua Frizzante</h2>
+        <p class="ingredienti">Acqua naturale, anidride carbonica</p>
+        <p class="descrizione">Leggera e frizzante, ideale per accompagnare ogni piatto e rinfrescare il palato.</p>
+        <p class="origine">Origine: Italia 🇮🇹</p>
+    </article>
+
+    <article class="bevanda">
+        <img src="acqua naturale.png">
+        <span class="prezzo">€1.50</span>
+        <h2>Acqua Naturale</h2>
+        <p class="ingredienti">Acqua pura di sorgente</p>
+        <p class="descrizione">Semplice, pura e dissetante. La bevanda essenziale per ogni momento della giornata.</p>
+        <p class="origine">Origine: Italia 🇮🇹</p>
+    </article>
+
+    <article class="bevanda">
+        <img src="amarolucano.jpg">
+        <span class="prezzo">€4.50</span>
+        <h2>Amaro Lucano</h2>
+        <p class="ingredienti">Infuso di erbe aromatiche, alcool, zucchero</p>
+        <p class="descrizione">Un classico dopo pasto dal gusto equilibrato e aromatico, con oltre 30 erbe selezionate.</p>
+        <p class="origine">Origine: Basilicata 🇮🇹</p>
+    </article>
+
+    <article class="bevanda">
+        <img src="fernet.jpg">
+        <span class="prezzo">€4.50</span>
+        <h2>Fernet Branca</h2>
+        <p class="ingredienti">Erbe amaricanti, spezie, alcool</p>
+        <p class="descrizione">Un amaro intenso e deciso, perfetto come digestivo o con ghiaccio per un gusto forte e speziato.</p>
+        <p class="origine">Origine: Milano 🇮🇹</p>
+    </article>
+
+    <article class="bevanda">
+        <img src="Limoncello.avif">
+        <span class="prezzo">€4.00</span>
+        <h2>Limoncello</h2>
+        <p class="ingredienti">Limoni, alcool, zucchero</p>
+        <p class="descrizione">Il liquore profumato della Costiera Amalfitana, dal gusto dolce e fresco di limone naturale.</p>
+        <p class="origine">Origine: Campania 🇮🇹</p>
+    </article>
+
+</section>
+
+<footer>
+    <div class="button-container">
+                    <button class="menu-button" onclick="window.location.href='scheramata home.html'"> Home</button>
+    <p>© 2025 Bar Di Mondo - Tutti i diritti riservati 🍹</p>
+</footer>
+
+</body>
+</html>
