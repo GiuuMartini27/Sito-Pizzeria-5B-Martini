@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizzaPazza</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* --- RESET & BASE --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffaf5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- NAVBAR --- */
+        nav {
+            background-color: #b22222;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 60px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        nav .home-button {
+            font-size: 20px;
+            font-weight: 600;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffe5b4;
+        }
+
+        /* --- HEADER --- */
+        header {
+            position: relative;
+            margin-top: 75px; /* per compensare la navbar fissa */
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+            filter: brightness(70%);
+        }
+
+        header h1 {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 60px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+
+        /* --- SEZIONI --- */
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 60px 20px;
+        }
+
+        section.box {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 80px;
+            gap: 40px;
+        }
+
+        section.box img {
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            max-width: 100%;
+            height: auto;
+        }
+
+        section h2 {
+            font-size: 32px;
+            color: #b22222;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 17px;
+            color: #444;
+            text-align: justify;
+        }
+
+        /* --- PULSANTI MENÙ --- */
+        .button-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 25px;
+        }
+
+        .menu-button {
+            background-color: #b22222;
+            color: white;
+            border: none;
+            padding: 14px 35px;
+            font-size: 18px;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .menu-button:hover {
+            background-color: #ff6347;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* --- CONTATTI --- */
+        #contatti p {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background-color: #b22222;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+            margin-top: 60px;
+            font-size: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+
+            header h1 {
+                font-size: 42px;
+                text-align: center;
+            }
+
+            section.box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            section p {
+                text-align: center;
+            }
+
+            .button-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar PG-padding">
+        <div>
+            <a href="#home" class="home-button">Pizzeria & Bistrò</a>
+        </div>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="#info">Chi Siamo</a></li>
+            <li class="nav-item"><a href="#menu">Il Nostro Menù</a></li>
+            <li class="nav-item"><a href="#contatti">Contatti</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="home">
+        <img src="https://www.buttalapasta.it/wp-content/uploads/2017/11/pizza-margherita.jpg" alt="Pizza Margherita">
+        <h1>PizzaPazza</h1>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- CHI SIAMO -->
+        <section id="info" class="box">
+            <img src="https://img.freepik.com/premium-photo/classic-italian-pepperoni-pizza-empty-plate-top-view-vertical-photo-high-quality-photo_275899-621.jpg?w=740" alt="Pizza classica">
+            <div>
+                <h2>Chi Siamo</h2>
+                <p>
+                    Lo staff del ristorante pizzeria <strong>pizzapazza</strong> opera da anni nel settore per garantirvi tutto il gusto ed il sapore del forno a legna unito a ingredienti genuini ed invitanti.
+                </p>
+                <p>
+                    Le nostre pizze sono cotte nel forno a legna, come vuole la tradizione. Gli ingredienti utilizzati sono sempre freschi e genuini, perfetti per farvi assaporare ad ogni morso tutto il gusto della buona tavola.
+                </p>
+                <p>
+                    Ogni piatto è accompagnato dalla giusta bevanda, per offrirvi un pasto completo ed invitante. Lasciatevi consigliare dal nostro staff qualificato per gli abbinamenti più sfiziosi.
+                </p>
+            </div>
+        </section>
+
+        <!-- IL NOSTRO MENÙ -->
+        <section id="menu" class="box" style="flex-direction: row-reverse;">
+            <img src="https://img.freepik.com/free-photo/pizza-with-tomatoes-spaghetti-corn-olives-mushrooms-close-up-dark-background_176474-4619.jpg" alt="Pizza gustosa">
+            <div>
+                <h2>Il Nostro Menù</h2>
+                <p>
+                    Scopri le nostre specialità: pizze classiche, dolci artigianali e una selezione di bibite fresche per accompagnare ogni piatto.  
+                </p>
+                <div class="button-container">
+                    <button class="menu-button" onclick="window.location.href='schermata pizza.html'">🍕 Pizze</button>
+                    <button class="menu-button" onclick="window.location.href='schermata dolci.html'">🍰 Dolci</button>
+                    <button class="menu-button" onclick="window.location.href='schermata bibite.html'">🥤 Bibite</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATTI -->
+        <section id="contatti" class="box">
+            <div style="margin:auto;">
+                <h2>Contatti</h2>
+                <p>
+                    📍 Via Roma 12, Firenze <br>
+                    📞 055 1234567 <br>
+                    ✉️ info@pizzapazza.it <br>
+                    seguici sui social: <br>
+                    instagram: PizzapazzaOfficial  <br>                  
+                    facebook: PizzapazzaOfficial <br>
+                    tiktok: PizzapazzaOfficial <br>
+                    Lasciaci una recensione positiva sui social ristorativi da 1-5 stelle...grazie per la visita!!!<br>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Il Posto Giusto - Tutti i diritti riservati
+    </footer>
+</body>
+</html>
