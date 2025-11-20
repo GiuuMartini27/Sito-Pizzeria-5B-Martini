@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Processo di Creazione del Sito Web per la Pizzeria</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #ff6347; /* Tomato */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #ff4500; /* OrangeRed */
+            animation: fadeIn 1s ease-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            animation: slideIn 1s ease-out;
+        }
+
+        h2, h3 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            animation: fadeInText 1.5s ease-out;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: disc;
+            margin-bottom: 20px;
+            animation: fadeInText 1.5s ease-out;
+        }
+
+        .highlight {
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            font-size: 14px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+            opacity: 0;
+            animation: fadeInSection 1s forwards;
+        }
+
+        /* Animazioni */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInText {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        @keyframes fadeInSection {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header h1:hover {
+            color: #ffeb3b; /* Bright Yellow */
+            text-shadow: 2px 2px 10px rgba(255, 235, 59, 0.8);
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+        }
+
+        ul li:hover {
+            color: #ff6347;
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Processo di Creazione del Sito Web per la Pizzeria</h1>
+    </header>
+
+    <div class="container">
+        <section class="section">
+            <h2>Introduzione</h2>
+            <p>La creazione di un sito web per una pizzeria è stato un progetto entusiasmante che ha coinvolto tre sviluppatori, ognuno con competenze specifiche. Grazie alla possibilità di lavorare in remoto e all’utilizzo di strumenti come <strong>GitHub</strong> e <strong>Visual Studio Code</strong>, siamo riusciti a realizzare un sito funzionale, visivamente accattivante e perfettamente adattabile ai dispositivi mobili. Questo progetto ha richiesto una pianificazione accurata, una suddivisione dei compiti e una stretta collaborazione tra i membri del team.</p>
+        </section>
+
+        <section class="section">
+            <h2>Pianificazione e Organizzazione del Lavoro</h2>
+            <p>La prima fase del progetto ha riguardato la suddivisione dei compiti e la pianificazione delle attività. Abbiamo deciso di creare tre sezioni principali per il menu del sito: "Menu Dolci", "Menu Pizze" e "Menu Bevande". Ogni sviluppatore ha preso in carico una di queste sezioni, ma il coordinamento è stato gestito dal <strong>Project Manager</strong>, che ha creato il repository su <strong>GitHub</strong>, invitato i membri del team e monitorato i progressi del progetto. La scelta di utilizzare <strong>GitHub</strong> per il versionamento e la collaborazione ha permesso a ciascun membro di lavorare in modo indipendente, mantenendo il controllo completo sul codice.</p>
+        </section>
+
+        <section class="section">
+            <h2>Sviluppo delle Sezioni del Menu</h2>
+            <p>Una volta definito il flusso di lavoro, ogni sviluppatore ha iniziato a lavorare sulla propria parte del progetto:</p>
+            <ul>
+                <li><strong>Sviluppatore A (Project Manager):</strong> Ha creato la sezione "Menu Dolci", curando il design e il layout della pagina. Ogni dolce è stato accompagnato da foto invitanti e descrizioni brevi, con un focus sulla creazione di un'atmosfera calda e accogliente.</li>
+                <li><strong>Sviluppatore B:</strong> Ha lavorato sulla sezione "Menu Pizze", creando un layout chiaro e facile da navigare, con immagini delle pizze e descrizioni dettagliate degli ingredienti.</li>
+                <li><strong>Sviluppatore C:</strong> Ha progettato la sezione "Menu Bevande", utilizzando colori freschi e luminosi per rendere la pagina visivamente dinamica. Ogni bevanda è stata descritta con attenzione, per offrire all'utente tutte le informazioni necessarie.</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Integrazione e Testing</h2>
+            <p>Una volta completate le singole sezioni, abbiamo integrato il codice e unito le pagine in un'unica struttura. Questo processo è stato facilitato dall'uso di <strong>GitHub</strong>, che ha permesso a ciascun membro del team di fare il <strong>commit</strong> delle proprie modifiche e di aprire le <strong>pull request</strong> per revisionare il lavoro altrui. Ogni modifica è stata testata in tempo reale per garantire che il sito fosse completamente funzionante su vari dispositivi e browser. Abbiamo anche corretto eventuali errori e ottimizzato il codice per migliorarne la performance.</p>
+        </section>
+
+        <section class="section">
+            <h2>Procedimento del Lavoro</h2>
+            <p>Il processo di sviluppo del sito web per la pizzeria è stato suddiviso in più fasi, che vanno dalla creazione dei singoli menu fino alla redazione finale della relazione. Ecco i passaggi chiave seguiti dal nostro team:</p>
+            <ul>
+                <li><strong>Creazione del Repository su GitHub:</strong> La prima attività è stata la creazione di un repository su GitHub, dove il progetto è stato centralizzato e dove ogni sviluppatore ha potuto caricare il proprio lavoro in modo sicuro e tracciato. Il Project Manager ha invitato gli altri membri del team, definendo le regole per l'utilizzo del repository.</li>
+                <li><strong>Creazione dei Menu:</strong> Ogni sviluppatore ha lavorato sul proprio menu specifico: il Menu Dolci, il Menu Pizze e il Menu Bevande. Ogni sezione è stata progettata tenendo conto dell’aspetto grafico e della funzionalità. Abbiamo utilizzato immagini di alta qualità,
+        <section class="section">
+            <h2>Conclusioni Finali</h2>
+            <p>Il progetto di sviluppo del sito web per la pizzeria si è rivelato un'esperienza altamente positiva e istruttiva per tutto il team. Grazie alla pianificazione meticolosa, all'uso di strumenti moderni e alla collaborazione continua, siamo riusciti a creare un sito che non solo risponde alle esigenze del cliente, ma che offre anche un'esperienza utente eccezionale. Il sito è visivamente accattivante, facilmente navigabile e completamente responsive su tutti i dispositivi.</p>
+            <p>Un aspetto fondamentale di questo progetto è stata la capacità di lavorare a distanza, sfruttando appieno le potenzialità di <strong>GitHub</strong> e <strong>Visual Studio Code</strong>, che ci hanno permesso di mantenere un flusso di lavoro fluido e ben organizzato. La gestione del codice tramite repository Git ha ridotto il rischio di conflitti e ha aumentato la trasparenza durante l'intero processo di sviluppo.</p>
+            <p>Il feedback del cliente è stato molto positivo, apprezzando la qualità visiva del sito e la facilità d'uso. Inoltre, l'integrazione delle immagini e la cura del design hanno contribuito a creare un'atmosfera accogliente e invitante, rispecchiando perfettamente l'identità del brand della pizzeria.</p>
+            <p>In conclusione, questo progetto ha non solo migliorato le nostre competenze tecniche e collaborative, ma ha anche dimostrato l'importanza di lavorare con un team affiatato e l'uso di strumenti giusti per il successo di un progetto digitale. Siamo soddisfatti del risultato finale e siamo pronti ad affrontare nuove sfide con la stessa determinazione e professionalità.</p>
+        </section>
+    </body>
+    </html>
